@@ -1,0 +1,207 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #fff1ee; /* Background color */
+}
+
+/* Line that stays below the HOME section */
+.line {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #333;
+    margin: -30px auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff1ee;
+    padding: 20px 100px;
+    margin: 0 -50px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    background-color: #fff1ee;
+}
+
+.nav-icon {
+    width: 100px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/* Feedback container styling */
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/* Textbox and feedback form wrapper */
+.feedback-textbox-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Textbox styling */
+.feedback-textbox {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button inside the textbox, positioned at the bottom-right */
+.feedback-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f7dbdb;
+    background-color: #C4A69F;
+    border: 3px solid #000000;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Notification styling */
+.notification {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #C4A69F; 
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 20px 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+.notification.error {
+    background-color: pink; /* Red background for errors */
+}
+
+.feedback-button:hover {
+    background-color: #B08E7E;
+}
+
+.feedback-button:active {
+    background-color: #9F7D6D;
+    transform: scale(0.98);
+}
+
+/* Placeholder text opacity */
+.feedback-textbox::placeholder {
+    opacity: 0.2;
+    color: #333;
+}
+
+.sort-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-container select {
+    padding: 5px 10px;
+    border: 1px solid #C4A69F;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #C4A69F;
+}
+
+
+/* Feedback List Container */
+.feedback-list {
+
+    display: grid;                        /* Use grid layout */
+    grid-template-columns: repeat(3, 2fr); /* Limit to 2 comments per row */
+    max-width: 800px;                     /* Optional: Constrain overall width */
+    margin-top: 20px;        /* Space above the feedback list */
+    padding: 10px;           /* Optional: Space inside the feedback list container */
+    gap: 30px;               /* Space between feedback items */
+    align-items: left;
+    overflow-wrap: break-word;
+  
+
+}
+
+/* Individual Feedback Item */
+.feedback-item {
+    position: relative;
+    background-color: #C4A69F;  /* White background for feedback items */
+    border: 1px solid #ddd;  /* Light border around each feedback item */
+    border-radius: 8px;      /* Slightly rounded corners */
+    padding: 15px;           /* Space inside each feedback item */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+    width: 200px;
+    height: 190px;
+    
+}
+
+
+
+/* Hover Effect for Feedback Items */
+.feedback-item:hover {
+    transform: translateY(-3px); /* Slightly lift the item on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Styling for Text Inside Feedback Items */
+.feedback-item p {
+    margin: 5px 0;          /* Space between paragraphs */
+    font-size: 12px;        /* Font size for readability */
+    color: #191313;            /* Text color */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Username Styling */
+.feedback-item strong {
+    color: #4a4a4a;         /* Darker color for the username */
+    font-size: 18px;        /* Slightly larger font for emphasis */
+}
+
+/* Timestamp Styling */
+.feedback-item small {
+    position: absolute;
+    bottom: 0;      /* Stick it to the bottom of the feedback item */
+    right: 0;       /* Align it to the right */
+    font-size: 10px; /* Smaller font size for timestamp */
+    color: #000000;    /* Lighter color for the timestamp */
+    padding: 10px;
+    text-align: right;
+}
+
