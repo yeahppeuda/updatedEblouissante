@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #fff1ee; /* Change this color to any you like */
+}
+
+/* Line that stays below the HOME section */
+.line {
+    position: relative; /* Position it relative to its normal flow */
+    top: 0; /* Adjust if necessary */
+    width: 100%;
+    border-top: 1px solid #333;
+    margin: -30px auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: -10px; /* Adjust for spacing above */
+    margin-bottom: 10px; /* Adjust for spacing below */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Text color */
+    background-color: #fff1ee; /* Button background */
+    padding: 20px 100px;
+    margin: 0 -50px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px; /* Adjust the size here */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    background-color: #fff1ee; /* Change color on hover */
+}
+
+/* Style the image */
+.nav-icon {
+    width: 100px;    /* Adjust the width as needed */
+    height: auto;   /* Maintain the aspect ratio */
+    margin: 0 10px; /* Adjust space between buttons and image */
+    vertical-align: middle; /* Align image with text */
+}
+
+.rounded-rectangle {
+    margin-top: 60px; /* Adjusts the space below the navbar */
+    padding: 20px; /* Adds space inside the rectangle */
+    border: 2px solid #333; /* Outline of the rectangle */
+    border-radius: 25px; /* Rounds the corners */
+    background-color: #f5f5f5; /* Background color */
+    max-width: 800px; /* Sets the width of the rectangle */
+    text-align: center; /* Centers text and inline elements inside the rectangle */
+    margin: 40px auto; /* Centers the rectangle itself on the page */
+}
+
+.rounded-rectangle a {
+    margin-right: 50px;
+    padding-left: 30px;
+}
+
+body {
+    background-color: #f6e6e3; /* Light background color */
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between each menu item */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    background-color: #d8bcb7; /* Card background color */
+    padding: 10px 15px;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  .menu-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .menu-title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3d3d3d; /* Text color */
+  }
+  
+  .item-name {
+    margin-right: 10px;
+  }
+  
+  .dots {
+    flex-grow: 1;
+    border-bottom: 2px dotted #3d3d3d; /* Dotted line */
+    margin: 0 10px;
+  }
+  
+  .item-price {
+    font-size: 20px;
+    color: #3d3d3d; /* Text color */
+  }
+  
+  .menu-sizes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #3d3d3d; /* Text color */
+    margin-top: 5px;
+  }
+  
+
+

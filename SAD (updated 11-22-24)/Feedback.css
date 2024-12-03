@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #fff1ee; /* Change this color to any you like */
+}
+
+/* Line that stays below the HOME section */
+.line {
+    position: relative; /* Position it relative to its normal flow */
+    top: 0; /* Adjust if necessary */
+    width: 100%;
+    border-top: 1px solid #333;
+    margin: -30px auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: -10px; /* Adjust for spacing above */
+    margin-bottom: 10px; /* Adjust for spacing below */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Text color */
+    background-color: #fff1ee; /* Button background */
+    padding: 20px 100px;
+    margin: 0 -50px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px; /* Adjust the size here */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    background-color: #fff1ee; /* Change color on hover */
+}
+
+/* Style the image */
+.nav-icon {
+    width: 100px;    /* Adjust the width as needed */
+    height: auto;   /* Maintain the aspect ratio */
+    margin: 0 10px; /* Adjust space between buttons and image */
+    vertical-align: middle; /* Align image with text */
+}
+
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+
+.feedback-textbox-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Textbox styling */
+.feedback-textbox {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    font-family: Lato (Italic);
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical; /* Allow vertical resizing only */
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Button inside the textbox, positioned at the bottom-right */
+.feedback-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f7dbdb;
+    background-color: #C4A69F;
+    border: 3px solid #000000;
+    border-radius: 80px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); 
+    font-family: Lateef;
+}
+
+.feedback-button:hover {
+    background-color: #B08E7E; 
+}
+
+.feedback-button:active {
+    background-color: #9F7D6D; 
+    transform: scale(0.98); 
+}
+
+/* Placeholder text opacity */
+.feedback-textbox::placeholder {
+    opacity: 0.2; 
+    color: #333;  
+}

@@ -1,0 +1,170 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #fff1ee; /* Change this color to any you like */
+}
+
+/* Line that stays below the HOME section */
+.line {
+    position: relative; /* Position it relative to its normal flow */
+    top: 0; /* Adjust if necessary */
+    width: 100%;
+    border-top: 1px solid #333;
+    margin: -30px auto;
+}
+
+nav {
+    text-align: center;
+    margin-top: -10px; /* Adjust for spacing above */
+    margin-bottom: 10px; /* Adjust for spacing below */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Text color */
+    background-color: #fff1ee; /* Button background */
+    padding: 20px 100px;
+    margin: 0 -50px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px; /* Adjust the size here */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    background-color: #fff1ee; /* Change color on hover */
+}
+
+/* Style the image */
+.nav-icon {
+    width: 100px;    /* Adjust the width as needed */
+    height: auto;   /* Maintain the aspect ratio */
+    margin: 0 10px; /* Adjust space between buttons and image */
+    vertical-align: middle; /* Align image with text */
+}
+
+/* Footer Styling */
+#social-media-footer {
+    background-color: #C4A69F;
+    display: flex; 
+    justify-content: space-between; /* Place left and right images at the ends */
+    padding: 10px -20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* Style the left-side images */
+.left-images {
+    display: flex;
+    gap: 5px; 
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+
+.right-image {
+    display: flex;
+    
+}
+
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+#circle-container {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+/* Outer circle */
+#outer-circle {
+    width: 360px;  /* Outer circle size */
+    height: 350px;
+    border-radius: 50%;  /* Make it circular */
+    background-color: #C4A69F;  /* Outer circle color */
+    position: absolute;
+    left: 150px;
+    top: -150px;
+}
+
+/* Inner circle */
+#inner-circle {
+    width: 310px;  /* Inner circle size */
+    height: 300px;
+    border-radius: 50%;  /* Make it circular */
+    background-color: #fff1ee;  /* Inner circle color */
+    position: absolute;
+    top: 172px;  /* Position in the center of the outer circle */
+    left: 189px; /* Position in the center of the outer circle */
+    transform: translate(-50%, -50%);  /* Center it */
+}
+
+.inner-circle-logo {
+    width: 380px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    height: 70vh;
+    padding: 0 200px;
+    text-align: justify;
+    margin-left: 400px;
+    width: 500px;
+}
+
+.content {
+    text-align: right; 
+    width: max-content;
+}
+
+
+.container h1 {
+    font-family: Ledger;
+    font-size: 64px;
+    padding-right: 170px; 
+}
+
+/* Paragraph styling */
+p {
+    font-family: Lateef;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000; 
+    padding-right: 30px; 
+    max-width: 400px; 
+}

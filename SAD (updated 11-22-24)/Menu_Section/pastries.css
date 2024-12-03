@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:#fff1ee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  
+  nav {
+    text-align: center;
+    margin-top: -30px; /* Adjust for spacing above */
+    margin-bottom: 10px; /* Adjust for spacing below */
+    width: 100%;;
+  }
+  
+  nav a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Text color */
+    background-color: (#fff1ee, 0.2); /* Button background */
+    padding: 20px 100px;
+    margin: 0 -50px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 24px; /* Adjust the size here */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  nav a:hover {
+    background-color: (#fff1ee, 0.2); /* Change color on hover */
+  }
+  
+  /* Style the image */
+  .nav-icon {
+    width: 100px;    /* Adjust the width as needed */
+    height: auto;   /* Maintain the aspect ratio */
+    margin: 0 10px; /* Adjust space between buttons and image */
+    vertical-align: middle; /* Align image with text */
+  }
+  /* Line below navigation */
+  .line {
+    position: relative; /* Position it relative to its normal flow */
+    top: 0; /* Adjust if necessary */
+    width: 100%;
+    border-top: 1px solid #333;
+    margin: -30px auto;
+  }
+  
+  /* Rounded rectangle container */
+  .rounded-rectangle {
+    margin: 50px auto;
+    padding: 10px; /* Reduced padding for smaller screens */
+    border: 2px solid #333;
+    border-radius: 25px;
+    background-color: #C4A69F;
+    max-width: 1000px;
+    width: 90%; /* Responsive width */
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-evenly;
+    align-items: center;
+    word-wrap: break-word; /* Ensures text doesn't overflow */
+    overflow-wrap: break-word;
+    box-sizing: border-box; /* Ensures padding is included in width */
+  }
+  
+  .rounded-rectangle a {
+    text-decoration: none;
+    color: #333;
+    background-color: #C4A69F;
+    padding: 10px 15px; /* Reduced padding for better fit */
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 1.2rem; /* Smaller font size for responsiveness */
+    font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word; /* Prevent link text from overflowing */
+  }
+  
+ /* Menu container */
+ .menu-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+  gap: 20px; /* Space between menu items */
+  justify-content: center;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column; /* Keeps content in a vertical stack */
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #C4A69F;
+}
+
+.menu-image {
+  width: 100%; /* Makes the image fit the item width */
+  height: 150px; /* Ensures consistent height */
+  object-fit: contain; /* Fits the image within the container, preserving its aspect ratio */
+  border-radius: 10px;
+  background-color: #fff1ee; /* Optional: Adds a background color if images don't fill the area */
+}
+
+.menu-title {
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-top: 10px;
+flex-direction: column;
+}
+
+.item-name{
+  font-size: 16px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.sub-item-name{
+  margin-top: -10px;
+  font-size: 12px;
+}
+
+.item-price {
+font-size: 12px;
+}
+
+.menu-sizes {
+font-size: 12px;
+margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+body {
+  padding: 10px; /* Reduce padding for smaller screens */
+  height: auto; /* Allow content to expand naturally */
+  background-color: #fff1ee;
+}
+
+nav {
+  display: flex;
+  flex-direction: row; /* Keep items in a row */
+  align-items: row; /* Center the items vertically */
+  justify-content: center; /* Center items horizontally if you want */
+  gap: 115px; /* Space between the items */
+  margin-top: 20px; /* Adjust for some top spacing */
+  margin-bottom: 20px; /* Adjust bottom spacing */
+  width: 100%; /* Ensure the nav takes full width */
+
+
+}
+nav a {
+  padding: 10px 5px; /* Adjust padding for better clickability */
+  font-size: 14px; /* Adjust font size */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Text color */
+  border-radius: 5px; /* Optional rounded corners */
+  width: auto; /* Make the links adjust to the content */
+  text-align: center; /* Center text horizontally */
+  display: flex; /* Use flex to control content alignment */
+  margin-top: 5px;
+  justify-content: center; /* Center text horizontally */
+}
+
+.nav-icon {
+  width: 50px; /* Smaller icons */
+  margin-right: -50px;
+  margin-left: -50px;
+}
+
+.line {
+  margin: 5px auto; /* Adjust spacing for smaller screens */
+  margin-top: -20px;
+}
+
+.rounded-rectangle {
+  margin: 20px auto; /* Reduce margin for compact layout */
+  padding: 5px; /* Smaller padding */
+  width: 100%; /* Full width on mobile */
+  display: flex; /* Enable flexbox */
+  flex-wrap: wrap; /* Allow wrapping to the next row */
+  gap: 10px; /* Space between menu items */
+  justify-content: center; /* Center-align menu items */
+}
+
+.rounded-rectangle a {
+  flex: 1 1 calc(50% - 10px); /* Two items per row with spacing */
+  font-size: 1rem; /* Reduce font size */
+  padding: 8px 10px; /* Compact padding */
+  text-align: center; /* Center align text */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  font-weight: bold;
+}
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into rows */
+    gap: 10px; /* Space between menu items */
+    justify-content: space-between; /* Distribute items evenly across the row */
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-top: 0; /* Reset margin */
+    text-align: center;
+  }
+
+  .menu-item {
+    flex: 1 1 calc(50% - 10px); /* Two items per row with consistent spacing */
+    max-width: calc(50% - 10px); /* Prevent items from exceeding the row width */
+    padding: 10px; /* Compact padding for smaller items */
+    box-sizing: border-box; /* Include padding in width calculations */
+    border: 1px solid #ccc; /* Optional: Add a border for clarity */
+    border-radius: 8px; /* Rounded corners for visual appeal */
+    text-align: center; /* Center-align text inside items */
+    display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
+    align-items: center;
+  }
+
+  .menu-image {
+    width: 100%; /* Full width of the parent container */
+    height: 120px; /* Maintain a consistent height */
+    object-fit: contain; /* Show the full image without distortion */
+    border-radius: 8px; /* Match the item’s border radius */
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+
+  .menu-title {
+    display: flex; /* Use flex to arrange name, dots, and price */
+    justify-content: space-between; /* Ensure proper spacing between items */
+    margin: 5px 0; /* Consistent spacing */
+    font-size: 14px; /* Uniform font size */
+    width: 100%; /* Ensure it spans the full width of the container */
+    flex-direction: column;
+  }
+
+  .item-name {
+    font-weight: bold; /* Bold for item name */
+    font-size: 14px;
+    
+  }
+
+  .item-price {
+    color: #000000; /* Optional: Slightly lighter color for the price */
+    font-size: 12px;
+    
+  }
+
+  .menu-sizes {
+    font-size: 12px; /* Smaller font for size options */
+    margin-top: 5px; /* Compact spacing */
+    
+  }
+}
